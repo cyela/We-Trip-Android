@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/drive"
+    tools:context="com.example.chandrakanth.wetrip.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:background="#8C000000"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="19dp"
+            android:text="@string/welcome"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:targetApi="lollipop" />
+
+        <RelativeLayout
+            android:id="@+id/mainRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/border"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/etMainLemail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="enter your email"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="true" />
+
+            <EditText
+                android:id="@+id/etMainLpassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/etMainLemail"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/background_light"
+                android:ems="10"
+                android:hint="enter your password"
+                android:inputType="textPersonName"
+                android:password="false"
+                android:selectAllOnFocus="false" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_Signup"
+            android:layout_below="@+id/mainRelative"
+            android:buttonTint="@android:color/background_light"
+            android:cursorVisible="true"
+            android:text="@string/shw"
+            android:textColor="@android:color/background_light"
+            />
+
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/checkBox"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/btn_Signup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_Login"
+            android:layout_alignBottom="@+id/btn_Login"
+            android:layout_alignStart="@+id/textView"
+            android:text="@string/clicktosign" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chandrakanth.wetrip.UserActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_Main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            android:background="@drawable/border"
+            android:background="#8C000000">
+        <RelativeLayout
+            android:id="@+id/relativeTop"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/border">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleUser"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/noimage"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/tvUserTitle"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="89dp"
+                android:layout_marginStart="89dp"
+                android:layout_marginTop="23dp"
+                android:text="TextView"
+                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                tools:targetApi="lollipop" />
+
+            <ImageButton
+                android:id="@+id/imgBtnEditProf"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="55dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/editicon"
+                android:layout_alignTop="@+id/imgBtnSignOut"
+                android:layout_toStartOf="@+id/imgBtnSignOut" />
+
+            <ImageButton
+                android:id="@+id/imgBtnSignOut"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/exiticon"
+                android:layout_alignBottom="@+id/circleUser"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeMiddle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeTop"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/border">
+
+                <EditText
+                    android:id="@+id/desPost"
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:ems="10"
+                    android:hint="write and upload..."
+                    android:inputType="textPersonName" />
+
+                <ImageButton
+                    android:id="@+id/imgPost"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentEnd="true"
+
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/upload" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyler_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/imgPost"
+                     />
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/colorPrimaryDark"
+        app:menu="@menu/navigation" />
+
+</LinearLayout>

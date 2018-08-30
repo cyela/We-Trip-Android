@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.chandrakanth.wetrip.TripActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/etChat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border" />
+
+    <EditText
+        android:id="@+id/etChat"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recycleChat"
+        android:layout_alignTop="@+id/imgSend"
+        android:ems="10"
+        android:hint="@string/enterMessage"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/imgSend"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/send"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imgSendPic" />
+
+    <ImageButton
+        android:id="@+id/imgSendPic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/imgSend"
+        android:layout_alignEnd="@+id/recycleChat"
+        android:layout_alignRight="@+id/recycleChat"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/gallery" />
+
+</RelativeLayout>

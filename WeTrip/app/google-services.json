@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "863325883901",
+    "firebase_url": "https://wetrip-3e4c5.firebaseio.com",
+    "project_id": "wetrip-3e4c5",
+    "storage_bucket": "wetrip-3e4c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863325883901:android:4a184f68318a4ce2",
+        "android_client_info": {
+          "package_name": "com.example.chandrakanth.wetrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863325883901-mb2ndb4k0kemvn71fskg1uh65jk0u1sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chandrakanth.wetrip",
+            "certificate_hash": "0ec1891e27f34940ccfcc77c493860e662affa0d"
+          }
+        },
+        {
+          "client_id": "863325883901-4gklpkr94f275lu4h186icklc9912d6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDNCC94di-TBcD2v4ck3AylA2Fv71PRsg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863325883901-4gklpkr94f275lu4h186icklc9912d6m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

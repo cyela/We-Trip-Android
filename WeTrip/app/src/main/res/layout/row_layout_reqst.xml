@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circulepeople"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/noimage"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgBtnRejct"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/circulepeople"
+        android:text="TextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        tools:targetApi="lollipop" />
+
+    <ImageButton
+        android:id="@+id/imgBtnRejct"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="13dp"
+        android:layout_toStartOf="@+id/imgBtnAccpt"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/removefriend" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAccpt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/addfriend" />/ app:srcCompat="@drawable/addfriend" />
+</RelativeLayout>

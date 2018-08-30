@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">WeTrip</string>
+    <string name="welcome">Select,Plan and Enjoy Vacation</string>
+    <string name="login">Login</string>
+    <string name="clicktosign">Sign Up</string>
+    <string name="shw">Show Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Trip">Trips</string>
+    <string name="Friends">Friends</string>
+    <string name="trial">trail</string>
+    <string name="enterMessage">Enter Message</string>
+    <string name="Notifications">Notifications</string>
+    <string name="title_activity_place">PlaceActivity</string>
+</resources>

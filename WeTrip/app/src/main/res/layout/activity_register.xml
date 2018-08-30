@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drive"
+    tools:context="com.example.chandrakanth.wetrip.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background="#8C000000">
+
+        <EditText
+            android:id="@+id/editText_SignupFirstname"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_SignupLastname"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/editText_SignupFirstname"
+            android:layout_below="@+id/editText_SignupFirstname"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="21dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="360dp"
+            android:layout_height="30dp"
+
+            android:layout_alignStart="@+id/editText_SignupLastname"
+            android:layout_below="@+id/editText_SignupLastname"
+            android:layout_marginTop="23dp"
+            android:checkedButton="@+id/radioButton"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText_SignupEmail"
+                android:layout_alignStart="@+id/editText_SignupLastname"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editText_SignupEmail"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/radioGroup"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_SignupPasswordChoose"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/editText_SignupEmail"
+            android:layout_below="@+id/editText_SignupEmail"
+            android:layout_marginTop="14dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Choose Password"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText_SignupPasswordRepeat"
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:hint="Repeat Password"
+            android:inputType="textPersonName"
+            android:layout_below="@+id/progressBar"
+            android:layout_alignStart="@+id/progressBar" />
+
+        <Button
+            android:id="@+id/button_SignupCancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText_SignupPasswordRepeat"
+            android:layout_below="@+id/editText_SignupPasswordRepeat"
+            android:layout_marginTop="21dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/button_Signup_SIgnup"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_SignupCancel"
+            android:layout_alignBottom="@+id/button_SignupCancel"
+            android:layout_alignEnd="@+id/editText_SignupPasswordRepeat"
+            android:text="Signup" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText_SignupPasswordChoose"
+            android:layout_below="@+id/editText_SignupPasswordChoose"
+            android:layout_marginTop="11dp" />
+
+        <TextView
+            android:id="@+id/checker"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText_SignupPasswordRepeat"
+            android:layout_alignTop="@+id/progressBar" />
+
+    </RelativeLayout>
+</RelativeLayout>

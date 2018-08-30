@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_row"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/drive" />
+
+    <TextView
+        android:id="@+id/tvPostBy"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="4dp"
+        android:text="@string/trial"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignStart="@+id/tvPostBy"
+        android:layout_below="@+id/tvPostBy"
+        android:layout_marginTop="6dp"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_below="@+id/tvDesc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/trial"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        tools:targetApi="lollipop" />
+</RelativeLayout>
